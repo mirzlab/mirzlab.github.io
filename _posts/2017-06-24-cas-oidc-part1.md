@@ -174,12 +174,12 @@ fileName = serviceName + "-" + serviceNumericId + ".json"
 
 I created a file named *demoOIDC-207929965088748.json* with the following content :
 
-```javascript
+```json
 {
-  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "@class": "org.apereo.cas.services.OidcRegisteredService",
   "clientId": "demoOIDC",
   "clientSecret": "password",
-  "serviceId" : "^https://app.example.com/redirect",
+  "serviceId": "^https://app.example.com/redirect",
   "signIdToken": true,
   "implicit": true,
   "bypassApprovalPrompt": false,
@@ -187,7 +187,7 @@ I created a file named *demoOIDC-207929965088748.json* with the following conten
   "id": 207929965088748,
   "evaluationOrder": 100,
   "encryptIdToken": false,
-  "scopes" : [ "java.util.HashSet",
+  "scopes": [ "java.util.HashSet",
     [ "openid", "profile", "profile_full" ]
   ]
 }
@@ -218,7 +218,7 @@ After consenting to the requested scopes, we are redirected to the application w
 
 We can succesfully retrieve all claims inside the id_token :
 
-```javascript
+```json
 {
   "jti": "68fdb72b-e739-4d7d-a5ec-e6feb1b385a3",
   "iss": "https://cas.example.com:8443/cas/oidc",
