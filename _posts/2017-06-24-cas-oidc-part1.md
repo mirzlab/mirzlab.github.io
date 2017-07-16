@@ -220,19 +220,19 @@ We can succesfully retrieve all claims inside the id_token :
 
 ```json
 {
-  "jti": "68fdb72b-e739-4d7d-a5ec-e6feb1b385a3",
+  "jti": "af322620-accc-4a2c-b71e-c1d30f6a87c7",
   "iss": "https://cas.example.com:8443/cas/oidc",
   "aud": "demoOIDC",
-  "exp": 1500227995,
-  "iat": 1500220795,
-  "nbf": 1500220495,
+  "exp": 1500232568,
+  "iat": 1500225368,
+  "nbf": 1500225068,
   "sub": "jdoe",
   "amr": [
     "LdapAuthenticationHandler"
   ],
-  "state": "af0ifjsldkj",
-  "nonce": "n-0S6_WzA2Mj",
-  "at_hash": "KBAoZ0nJYbnzIm9mLBmePQ==",
+  "state": "3km36n5yp2l9h26",
+  "nonce": "po7s2tr6wnc8xs2",
+  "at_hash": "VCOZ4tr3FZ07BYjIqD6qAQ==",
   "displayName": "John Doe",
   "employeeNumber": "123456789",
   "givenName": "John",
