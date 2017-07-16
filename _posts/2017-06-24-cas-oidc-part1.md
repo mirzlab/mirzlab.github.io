@@ -200,7 +200,7 @@ I will use the custom scope *profile_full* to retrieve all user attributes.
 We will perform a implicit authorization flow.
 
 ```javascript
-https://cas.example.com:8443/cas/oidc/authorize?response_type=id_token%20token&client_id=demoOIDC&scope=openid%20profile%20given_name&redirect_uri=https%3A%2F%2Fapp.example.com%2Fredirect&state=af0ifjsldkj&nonce=n-0S6
+https://cas.example.com:8443/cas/oidc/authorize?response_type=id_token%20token&client_id=demoOIDC&scope=openid%20profile%20profile_full&redirect_uri=https%3A%2F%2Fapp.example.com%2Fredirect&state=3km36n5yp2l9h26&nonce=po7s2tr6wnc8xs2
 ```
 
 We are correclty redirected to the CAS login page. I use my jdoe user to authenticate.
