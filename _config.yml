@@ -1,0 +1,29 @@
+# Dependencies
+markdown:         redcarpet
+kramdown:
+  input: GFM
+highlighter:         pygments
+
+# Permalinks
+permalink:        pretty
+
+# Gems
+gems: [jekyll-paginate]
+
+# Setup
+title:            Blog
+tagline:          ''
+description:      'Security consultant, working in the IAM world, doing IAM stuffs'
+url:              http://167.114.254.92:4000
+
+author:
+  name:           'Vincent Mirzaian'
+  url:            https://twitter.com/vmirzaian
+
+paginate:         5
+
+github:
+  repo:           https://github.com/mirzlab
+
+sass:
+    sass_dir: ./css
