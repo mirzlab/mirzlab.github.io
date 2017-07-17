@@ -207,8 +207,8 @@ We are correclty redirected to the CAS login page. I use my jdoe user to authent
 
 <table>
 <tr>
-<td><img src="/images/login.png"/> </td>
-<td><img src="/images/consent.png"/></td>
+<td><img src="/images/login.png" style="width: 100%; height: auto"/></td>
+<td><img src="/images/consent.png" style="width: 100%; height: auto"/></td>
 </tr>
 </table>
 
