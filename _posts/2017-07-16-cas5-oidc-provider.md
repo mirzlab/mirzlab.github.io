@@ -141,7 +141,7 @@ cas.authn.ldap[0].bindDn=cn=Directory Manager
 cas.authn.ldap[0].bindCredential=password
 ```
 
-{% include note.html content="Here the LDAP bind password is specified in plain text. Check [this blog post](https://apereo.github.io/2017/03/24/cas51-ldapauthnjasypt-tutorial) if you want to specify specify an encrypted value." %}
+{% include note.html content="Here the LDAP bind password is specified in plain text. Check [this blog post](https://apereo.github.io/2017/03/24/cas51-ldapauthnjasypt-tutorial) if you want to specify an encrypted value." %}
 
 ### Build CAS webapp
 
