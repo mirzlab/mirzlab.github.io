@@ -12,7 +12,7 @@ gems: [jekyll-paginate]
 # Setup
 title:            Blog
 tagline:          ''
-description:      'Security consultant, working in the IAM world, doing IAM stuffs'
+description:      'Security consultant, working in the IAM world, doing IAM stuff'
 url:              http://167.114.254.92:4000
 
 author:
