@@ -17,7 +17,7 @@ git clone https://github.com/jtgasper3/docker-images.git
 cd docker-images/389-ds
 ```
 
-I edited the users.ldif as follow but you can edit it to fit your needs :
+I edited the users.ldif as follow but you can edit it to fit your needs:
 
 ```bash
 dn: uid=jdoe,ou=people,dc=example,dc=edu
@@ -33,7 +33,7 @@ userPassword: password
 description: Demo user
 ```
 
-Then build and run the container :
+Then build and run the container:
 
 ```bash
 docker build --tag="jtgasper3/389ds-basic" .
@@ -42,14 +42,14 @@ docker run -d -p 10389:389 --name="ldap-server" jtgasper3/389ds-basic
 
 ## CAS Configuration
 
-First retrieve the latest CAS overlay project :
+First retrieve the latest CAS overlay project:
 
 ```bash
 git clone https://github.com/apereo/cas-overlay-template.git
 cd cas-overlay-template
 ```
 
-Edit the pom.xml and add the following dependencies :
+Edit the pom.xml and add the following dependencies:
 
 ```xml
 <!-- Enabling OIDC support -->
@@ -74,7 +74,7 @@ Edit the pom.xml and add the following dependencies :
 </dependency>
 ```
 
-Create the following folders
+Create the following folders:
 
 ```bash
 # This folder will contain all CAS properties
@@ -87,14 +87,14 @@ mkdir /etc/cas/services
 mkdir /etc/cas/logs
 ```
 
-Copy all required files to the config directory :
+Copy all required files to the config directory:
 
 ```bash
 cd cas-overlay-template
 cp etc/cas/config/* /etc/cas/config
 ```
 
-Here is the content of my /etc/cas/config/cas.properties file (of course you will need to edit it to fit your environment) :
+Here is the content of my /etc/cas/config/cas.properties file (of course you will need to edit it to fit your environment):
 
 ```bash
 # CAS server URL
@@ -166,13 +166,13 @@ java -jar json-web-key-generator-0.4-SNAPSHOT-jar-with-dependencies.jar -t RSA -
 
 ### OIDC client registration
 
-OpenID Connect clients can be registered using the JSON registry service. You need to create a file in /etc/cas/services folder with the following naming convention :
+OpenID Connect clients can be registered using the JSON registry service. You need to create a file in /etc/cas/services folder with the following naming convention:
 
 ```javascript
 fileName = serviceName + "-" + serviceNumericId + ".json"
 ```
 
-I created a file named *demoOIDC-207929965088748.json* with the following content :
+I created a file named *demoOIDC-207929965088748.json* with the following content:
 
 ```json
 {
@@ -197,9 +197,9 @@ I will use the custom scope *profile_full* to retrieve all user attributes.
 
 ## Let's test !
 
-We will perform a implicit authorization flow.
+We will perform an implicit authorization flow.
 
-```javascript
+```
 https://cas.example.com:8443/cas/oidc/authorize?response_type=id_token%20token&client_id=demoOIDC&scope=openid%20profile%20profile_full&redirect_uri=https%3A%2F%2Fapp.example.com%2Fredirect&state=3km36n5yp2l9h26&nonce=po7s2tr6wnc8xs2
 ```
 
@@ -216,7 +216,7 @@ We are correclty redirected to the CAS login page. I use my jdoe user to authent
 
 After consenting to the requested scopes, we are redirected to the application with the tokens in the url query parameters.
 
-We can succesfully retrieve all claims inside the id_token :
+We can succesfully retrieve all claims inside the id_token:
 
 ```json
 {
