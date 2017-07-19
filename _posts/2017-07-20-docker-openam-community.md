@@ -23,7 +23,7 @@ $ docker build . -t openam
 $ docker run -it --rm --add-host "openam.example.com:127.0.0.1" -p 8443:8443 openam
 ```
 
-The OpenAM server will be available at https://openam.example.com:8443/openam .
+The OpenAM server will be available at https://openam.example.com:8443/openam.
 
 Update your /etc/hosts file on your host machine if necessary.
 
