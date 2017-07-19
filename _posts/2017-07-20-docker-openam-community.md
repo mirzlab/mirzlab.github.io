@@ -3,7 +3,7 @@ layout: post
 title: Docker image for OpenAM community version
 ---
 
-Here is my OpenAM Docker image, made to quickly have a up and ready OpenAM 11.0.3 server.
+Here is my OpenAM Docker image, made to quickly have an up and ready OpenAM 11.0.3 server.
 
 **This Docker image is good for quick tests or POCs, not intended for production use.**
 
@@ -22,6 +22,10 @@ cd docker-openam-community
 $ docker build . -t openam
 $ docker run -it --rm --add-host "openam.example.com:127.0.0.1" -p 8443:8443 openam
 ```
+
+The OpenAM server will be available at https://openam.example.com:8443/openam .
+
+Update your /etc/hosts file on your host machine if necessary.
 
 ## Customization
 
