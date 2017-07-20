@@ -98,8 +98,8 @@ $ docker build . -t openam \
 --build-arg OPENAM_DEPLOYMENT_URI=sso \
 --build-arg OPEANM_ADMIN_PASSWORD=P@ssw0rd01 \
 --build-arg OPENAM_HTTPS=true \
---build-arg TOMCAT_HTTPS_PORT=8443
-$ docker run -it --rm --add-host "demo.openam.com:127.0.0.1" -p 8443:8443 openam
+--build-arg TOMCAT_HTTPS_PORT=9443
+$ docker run -it --rm --add-host "demo.openam.com:127.0.0.1" -p 9443:9443 openam
 ```
 
 Tomcat HTTPS connector is configured using a generated self signed certificate.
