@@ -66,7 +66,7 @@ Default value: <b>openam.example.com</b>
 <pre>
 <b>OPENAM_DEPLOYMENT_URI</b>
 OpenAM server uri (i.e < host ><b>/openam</b>
-Specifies OpenAM war file name that will be deployed inside tomcat
+Specifies OpenAM war file name that will be deployed inside Tomcat
 
 Default value: <b>openam</b>
 </pre>
