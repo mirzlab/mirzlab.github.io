@@ -5,7 +5,7 @@ title: Docker image for OpenAM community version
 
 Here is my OpenAM Docker image, made to quickly have an up and ready OpenAM 11.0.3 server.
 
-**This Docker image is good for quick tests or POCs, not intended for production use.**
+**This Docker image is made for quick tests or POCs, not intended for production use.**
 
 -----
 
