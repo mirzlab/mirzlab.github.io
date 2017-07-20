@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Docker image for OpenAM community version
-published: false
 ---
 
 Here is my OpenAM Docker image, made to quickly have an up and ready OpenAM 11.0.3 server.
@@ -14,6 +13,8 @@ Here is my OpenAM Docker image, made to quickly have an up and ready OpenAM 11.0
 git clone git@github.com:mirzlab/docker-openam-community.git
 cd docker-openam-community
 ```
+
+[Github link](https://github.com/mirzlab/docker-openam-community)
 
 # How to use
 
@@ -34,14 +35,47 @@ Some options are available to customize the OpenAM server.
 
 ### Default build parameters
 
-| Parameter             | Description                                       | Default value      |
-|-----------------------|---------------------------------------------------|--------------------|
-| OPENAM_HTTPS          | If you need the OpenAM webapp to run using https  | true               |
-| TOMCAT_HTTPS_PORT     | Tomcat https port                                 | 8443               |
-| TOMCAT_HTTP_PORT      | Tomcat http port                                  | 8080               |
-| OPENAM_HOST           | OpenAM server host                                | openam.example.com |
-| OPENAM_DEPLOYMENT_URI | OpenAM server uri                                 | openam             |
-| OPENAM_ADMIN_PASSWORD | OpenAM amadmin password                           | Admin001           |
+<pre>
+<b>OPENAM_HTTPS</b>
+If you need the OpenAM webapp to run using https
+
+Default value: <b>true</b>
+</pre>
+
+<pre>
+<b>TOMCAT_HTTPS_PORT</b>
+Tomcat https port
+
+Default value: <b>8443</b>
+</pre>
+
+<pre>
+<b>TOMCAT_HTTP_PORT</b>
+Tomcat http port
+
+Default value: <b>8080</b>
+</pre>
+
+<pre>
+<b>OPENAM_HOST</b>
+OpenAM webapp will be configured using this host
+
+Default value: <b>openam.example.com</b>
+</pre>
+
+<pre>
+<b>OPENAM_DEPLOYMENT_URI</b>
+OpenAM server uri (i.e < host ><b>/openam</b>
+
+Default value: <b>openam</b>
+</pre>
+
+<pre>
+<b>OPENAM_ADMIN_PASSWORD</b>
+OpenAM amadmin (admin user) password
+
+Default value: <b>Admin001</b>
+</pre>
 
 ### Custom configuration
 
