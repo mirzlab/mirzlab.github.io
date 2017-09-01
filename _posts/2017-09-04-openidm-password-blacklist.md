@@ -88,7 +88,7 @@ Then create the actual function that will perform the check :
 
 <pre style="font-size: small">
 policyFunctions.notInMostCommonPasswordList = function(fullObject, value, params, prop) {
-  var passwordListPolicy = require("policy-passwordBlackList");
+  var passwordListPolicy = require("policy-passwordBlacklist");
   var isRequired = _.find(this.failedPolicyRequirements, function (fpr) {
     return fpr.policyRequirement === "REQUIRED";
   }),
