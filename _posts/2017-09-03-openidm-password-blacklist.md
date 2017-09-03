@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Password blacklist with Forgerock IDM 5
-summary: How to prevent users from choosing a password from a *most common passwords* list
+summary: How to prevent users from choosing a widely known password using a password blacklist
 ---
 
-The recent NIST password recommendations state:
+NIST recently released new password guidelines, one of those being:
 
 *\"When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a list that contains values known to be commonly-used, expected, or compromised.\"*
 
-In this blog post we will implement a blacklist mechanism in IDM 5 to prevent users from choosing a password that is known as a widely common used password.
+In this blog post we will implement a blacklist mechanism using IDM 5 to prevent users from choosing a password that is easily vulnerable to a dictionary attack.
 
 -----
 
@@ -111,7 +111,7 @@ $ vi openidm/conf/managed.json
 
 Edit the *user* object by applying the the new policy to the password attribute:
 
-```json-doc
+```
 "password" : {
     "title" : "Password",
     "type" : "string",
@@ -150,7 +150,7 @@ $ vi openidm/ui/selfservice/default/locales/en/translation.json
 
 Edit the *common.form.validation* object by adding our policy reference:
 
-```json-doc
+```
 "common": {
   "form": {
 ...
