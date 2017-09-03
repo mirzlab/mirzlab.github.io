@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Docker image for OpenAM community version
+summary: A Docker image for OpenAM 11.0.3
 ---
 
 Here is my OpenAM Docker image, made to quickly have an up and ready OpenAM 11.0.3 server.

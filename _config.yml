@@ -12,17 +12,19 @@ gems: [jekyll-paginate]
 # Setup
 title:            Blog
 tagline:          ''
-description:      'Security consultant, working in the IAM world, doing IAM stuff'
+description:      'Security consultant, doing IAM stuff'
 url:              http://167.114.254.92:4000
 
 author:
   name:           'Vincent Mirzaian'
   url:            https://twitter.com/vmirzaian
 
-paginate:         1
+paginate:         5
 
 github:
   repo:           https://github.com/mirzlab
 
 sass:
     sass_dir: ./css
+
+date_format: '%B %d, %Y'

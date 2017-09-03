@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CAS 5 as an OpenID Connect provider
+summary: Quick tutorial on how to configure CAS 5 OIDC server module
 ---
 
 This post shows how to configure CAS 5.1.x as an OpenID Connect provider.

@@ -3,7 +3,26 @@ layout: default
 title:
 ---
 
-<div class="posts">
+<div class="home">
+    <div class="posts">
+      {% for post in paginator.posts %}
+          <div class="post py3">
+            <i style="font-size: medium">{{ post.date | date: site.date_format }}</i>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+              {% if post.summary %}
+                {{ post.summary }}
+              {% else %}
+                {{ post.excerpt }}
+              {% endif %}
+            </p>
+          </div>
+        <hr/>
+      {% endfor %}
+    </div>
+</div>
+
+<!--<div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -17,7 +36,8 @@ title:
     {{ post.content }}
   </div>
   {% endfor %}
-</div>
+</div>-->
+
 
 <div class="pagination">
   {% if paginator.next_page %}
