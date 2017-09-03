@@ -111,7 +111,7 @@ $ vi openidm/conf/managed.json
 
 Edit the *user* object by applying the the new policy to the password attribute:
 
-```json
+```json-doc
 "password" : {
     "title" : "Password",
     "type" : "string",
@@ -150,7 +150,7 @@ $ vi openidm/ui/selfservice/default/locales/en/translation.json
 
 Edit the *common.form.validation* object by adding our policy reference:
 
-```json
+```json-doc
 "common": {
   "form": {
 ...
