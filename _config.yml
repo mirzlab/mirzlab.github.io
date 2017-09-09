@@ -13,7 +13,7 @@ gems: [jekyll-paginate]
 title:            Blog
 tagline:          ''
 description:      'Security consultant, doing IAM stuff'
-url:              http://167.114.254.92:4000
+url:              https://mirzlab.github.io
 
 author:
   name:           'Vincent Mirzaian'
@@ -28,3 +28,8 @@ sass:
     sass_dir: ./css
 
 date_format: '%B %d, %Y'
+
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate

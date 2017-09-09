@@ -13,6 +13,7 @@ gem "jekyll", "3.4.3"
 gem "jekyll-paginate"
 gem "redcarpet"
 gem 'pygments.rb'
+gem 'jekyll-seo-tag'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
