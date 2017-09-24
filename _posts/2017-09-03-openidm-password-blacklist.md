@@ -164,9 +164,9 @@ Edit the *common.form.validation* object by adding our policy reference:
 
 ## Let\'s test 
 
-We can test that the policy by performing a password reset flow with a choosen user. 
+We can test the policy by performing a password reset flow with a choosen user.
 
-After receiving an email with a link inside, IDM asks me to choose another password. 
+After receiving an email with a link inside, IDM asks me to choose another password.
 
 If I choose a banned password, the policy is triggered and prevents the password change:
 
