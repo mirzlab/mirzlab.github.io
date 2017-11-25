@@ -34,7 +34,7 @@ Restart your container.
 
 ## Configuration
 
-Specify the path to the mail template file inside the module configurationi (using OpenAM admin console or using ssoadm).
+Specify the path to the mail template file inside the module configuration (using OpenAM admin console or using ssoadm).
 
 A default mail template file is provided inside the project: *mailTemplate.txt*
 
