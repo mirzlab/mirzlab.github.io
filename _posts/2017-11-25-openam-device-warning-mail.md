@@ -1,10 +1,10 @@
 ---
 layout: post
 title: OpenAM - Email notification when sign-in from a new device
-summary: This authentication module sends an email to the user in case of a sign-in with a new device
+summary: This is an implementation on how to send a mail to the user in case a sign-in occurs using a new device
 ---
 
-This is an authentication module that sends the user a mail in case a sign-in occurs using a new device. This module is intended to be used after the OpenAM DeviceId Save module.
+This is an implementation on how to send a mail to the user in case a sign-in occurs using a new device. This module is intended to be used after the OpenAM DeviceId Save module.
 
 This module has been tested on OpenAM 13.0.0.
 
