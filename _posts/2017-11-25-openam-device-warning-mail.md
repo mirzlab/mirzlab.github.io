@@ -67,4 +67,4 @@ After entering the username and password, if the device is unknown, the user is 
 
 Default mail template result :
 
-![mail](/images/mail.png)
+<img src="/images/mail.png" style="width: 100%; height: auto"/>
