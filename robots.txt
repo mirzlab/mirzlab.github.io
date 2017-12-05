@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mirzlab.github.io/sitemap.xml

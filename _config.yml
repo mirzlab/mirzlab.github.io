@@ -10,7 +10,7 @@ permalink:        pretty
 gems: [jekyll-paginate]
 
 # Setup
-title:            Blog
+title:            Identity and Access Management Blog (IAM)
 tagline:          ''
 description:      'Security consultant, doing IAM stuff'
 url:              https://mirzlab.github.io
@@ -33,3 +33,4 @@ date_format: '%B %d, %Y'
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-sitemap
