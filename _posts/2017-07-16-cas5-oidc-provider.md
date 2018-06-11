@@ -215,7 +215,7 @@ We are correclty redirected to the CAS login page. I use my jdoe user to authent
 
 {% include note.html content="I modified the WEB-INF/messages.properties file to add the description to the custom scope profile_full" %}
 
-After consenting to the requested scopes, we are redirected to the application with the tokens in the url query parameters.
+After consenting to the requested scopes, we are redirected to the application with the tokens in the url fragment.
 
 We can succesfully retrieve all claims inside the id_token:
 
