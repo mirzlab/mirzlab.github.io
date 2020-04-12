@@ -8,7 +8,7 @@ This post shows how to configure CAS 5.1.x as an OpenID Connect provider.
 
 -----
 
-## LDAP Configuration
+## LDAP Configuration Test
 
 To authenticate our users, we will need an LDAP server. I am using [this docker image](https://github.com/jtgasper3/docker-images/tree/master/389-ds) which provides a simple and ready to use OpenLDAP server.
 
